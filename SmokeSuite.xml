@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="smoke">
+	<groups>
+		<run>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+	<test thread-count="1" parallel="tests" name="smokeTest">
+		<classes>
+			<class name="com.vtiger.sampleTest" />
+			<class name="com.vtiger.Sample1Test" />
+			<class name="com.vtiger.sample2Test" />
+		</classes>
+	</test> <!--
+	smokeTest -->
+</suite> <!--
+smoke -->
